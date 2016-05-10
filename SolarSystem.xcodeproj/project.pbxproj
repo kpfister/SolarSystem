@@ -14,10 +14,12 @@
 		68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A841BBB3591000569CE /* LaunchScreen.storyboard */; };
 		68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A901BBB3591000569CE /* SolarSystemTests.swift */; };
 		68816A9C1BBB3591000569CE /* SolarSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */; };
-		68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAE1BBB35EC000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; };
+		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; };
+		68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; };
+		68816AAE1BBB35EC000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; };
+		758D1F421CE290A2006A0222 /* PlanetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758D1F411CE290A2006A0222 /* PlanetListTableViewController.swift */; };
+		758D1F441CE2AB5C006A0222 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758D1F431CE2AB5C006A0222 /* PlanetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		68816A9D1BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68816AA91BBB35E8000569CE /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 		68816AAA1BBB35E8000569CE /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		758D1F411CE290A2006A0222 /* PlanetListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetListTableViewController.swift; sourceTree = "<group>"; };
+		758D1F431CE2AB5C006A0222 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				68816A7B1BBB3591000569CE /* AppDelegate.swift */,
 				68816A7D1BBB3591000569CE /* ViewController.swift */,
 				68816A7F1BBB3591000569CE /* Main.storyboard */,
+				758D1F431CE2AB5C006A0222 /* PlanetDetailViewController.swift */,
+				758D1F411CE290A2006A0222 /* PlanetListTableViewController.swift */,
 				68816AA91BBB35E8000569CE /* PlanetController.swift */,
 				68816AAA1BBB35E8000569CE /* Planet.swift */,
 				68816A821BBB3591000569CE /* Assets.xcassets */,
@@ -265,7 +271,9 @@
 			files = (
 				68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */,
 				68816A7E1BBB3591000569CE /* ViewController.swift in Sources */,
+				758D1F421CE290A2006A0222 /* PlanetListTableViewController.swift in Sources */,
 				68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */,
+				758D1F441CE2AB5C006A0222 /* PlanetDetailViewController.swift in Sources */,
 				68816AAC1BBB35E8000569CE /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +503,7 @@
 				68816AA21BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +512,7 @@
 				68816AA51BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +521,7 @@
 				68816AA81BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

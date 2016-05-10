@@ -4,21 +4,30 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Planet List Table View Controller-->
         <scene sceneID="uW8-Pl-l2v">
             <objects>
-                <tableViewController id="crl-i5-Czh" sceneMemberID="viewController">
+                <tableViewController id="crl-i5-Czh" customClass="PlanetListTableViewController" customModule="SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C8P-xv-ZGN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xt3-GQ-zbo">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" textLabel="3gH-kk-PFc" style="IBUITableViewCellStyleDefault" id="xt3-GQ-zbo">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xt3-GQ-zbo" id="zAr-ry-e1Y">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3gH-kk-PFc">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -27,11 +36,32 @@
                             <outlet property="delegate" destination="crl-i5-Czh" id="7di-wo-2vT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="eIj-Lf-l3O"/>
+                    <navigationItem key="navigationItem" id="eIj-Lf-l3O"/>
+                    <connections>
+                        <segue destination="NJL-Od-Eam" kind="show" identifier="toPlanetDetail" id="vXS-CE-aXX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JB-le-5ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="625" y="406"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y6c-iV-46G">
+            <objects>
+                <viewController id="NJL-Od-Eam" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YCp-Fa-edX"/>
+                        <viewControllerLayoutGuide type="bottom" id="XFD-oy-p8C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F8e-wB-JH5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Erf-B5-ekr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WC5-Wk-m82">
